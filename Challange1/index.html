@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <title>Document</title>
+     
+</head>
+<body>
+    <div class="main">
+        <div class="mycontainer">
+            <div class="imagecontainer">
+            
+                    <i class="fas fa-eye"></i>
+
+            </div>
+            <div class="content">
+                <p id="name">Equilibrium #3430</p>
+                <p id="desc">Our Equilibrium collection promotes <br>
+                    balance and calm
+                </p>
+            </div>
+            <div class="eth">
+                <div class="gem">
+                    <i class="fas fa-gem"><span>0.041ETH</span></i>
+                </div>
+                <div class="clock">
+                    <i class="fas fa-stopwatch"> <span>3 days left</span></i>
+                </div>
+            </div>
+            <div class="creator">
+                <div class="creatorimage"></div>
+                <div class="divi">
+                    <p>Creation of <span>Jules Wyvern</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="mycontainer" >
+            <div class="imagecontainer" id="secondpage">
+                <i class="fas fa-eye"></i>
+            </div>
+            <div class="content">
+                <p id="name">Equilibrium #3431</p>
+                <p id="desc">Our Equilibrium collection promotes <br>
+                    balance and calm
+                </p>
+            </div>
+            <div class="eth">
+                <div class="gem">
+                    <i class="fas fa-gem"><span>0.041ETH</span></i>
+                </div>
+                <div class="clock">
+                    <i class="fas fa-stopwatch"> <span>3 days left</span></i>
+                </div>
+            </div>
+            <div class="creator">
+                <div class="creatorimage"></div>
+                <div class="divi">
+                    <p>Creation of <span>Jules Wyvern</span></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mycontainer">
+            <div class="imagecontainer" id="thirdcont">
+                <i class="fas fa-eye"></i>
+            </div>
+            <div class="content">
+                <p id="name">Equilibrium #3432</p>
+                <p id="desc">Our Equilibrium collection promotes <br>
+                    balance and calm
+                </p>
+            </div>
+            <div class="eth">
+                <div class="gem">
+                    <i class="fas fa-gem"><span>0.041ETH</span></i>
+                </div>
+                <div class="clock">
+                    <i class="fas fa-stopwatch"> <span>3 days left</span></i>
+                </div>
+            </div>
+            <div class="creator">
+                <div class="creatorimage"></div>
+                <div class="divi">
+                    <p>Creation of <span>Jules Wyvern</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(()=> {
+        $(".main").on("mouseover",".imagecontainer",function() {
+            $(this).children(".fa-eye").css({
+                display:"block"
+            })
+        })
+        $(".main").on("mouseleave",".imagecontainer",function() {
+            $(this).children(".fa-eye").css({
+                display:"none"
+            })
+        })
+    })
+</script>
+</html>

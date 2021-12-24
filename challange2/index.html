@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="navigation">
+        <div class="navelements">
+            <h1 id="title">Sneakers</h1>
+            <a href="#">Collection</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="cartandimage" style="display: flex;">
+            <i class="fas fa-shopping-cart"></i>
+            <p id="userimage"></p>
+
+        </div>
+    </div>
+    <div class="productcontainer">
+        <div class="images">
+            <div class="mainimage"></div>
+            <div class="imageslider">
+                <img src="https://ecommerce-product-page.vercel.app/images/image-product-1.jpg" id="image1">
+                <img src="https://ecommerce-product-page.vercel.app/images/image-product-2.jpg" id="image2">
+                <img src="https://ecommerce-product-page.vercel.app/images/image-product-3.jpg" id="image3">
+                <img src="https://ecommerce-product-page.vercel.app/images/image-product-4.jpg" id="image4">
+            </div>
+        </div>
+        <div class="content">
+            <p id="diff">SNEAKERS COMPANY</p>
+            <h1 id="fall">Fall Limited Edition <br> Sneakrs</h1>
+            <p id="descr" style="margin:20px 0px;">These low-rpfile sneakrs are your perfect casual wear<br>
+            companion. Featuring a durable rubber outer sole, they`ll <br>
+            withstand everything the weather can offer.
+            </p>
+            <p style="font-size: 20px; font-weight: bold;">$125.00<span style="margin-left: 20px; font-size: 13px; font-weight: normal; color: #ff7d1b; background: #ffe5d0; padding:5px;border-radius: 4px; font-weight: bold; transform: translateY(-5px);">50%</span></p>
+            <p id="oldprice">$250.00</p>
+            <div class="amount">
+                <div class="adding">
+                    <button type="button">-</button>
+                    <p id="counter" style="font-weight: bold;">0</p>
+                    <button type="button">+</button>
+                </div>
+                <div class="addtocart">
+                    <button type="button">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

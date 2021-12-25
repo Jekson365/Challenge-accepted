@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='index.js'></script>
+</head>
+<body>
+    <div class="cover">
+        <div class="maincontainer">
+        <div class="margining">
+            <div class="billinput">
+                <p id="bill">Bill</p>
+                <i class="fas fa-dollar-sign"></i>
+                <input type="text" placeholder="0" id="inp1" class="mybill">
+            </div>
+            <div class="tips">
+                <p id="select">Select Tip %</p>
+                <div class="boxex">
+                    <button type="button" id="five" value="5">5%</button>
+                    <button type="button" value="10">10%</button>
+                    <button type="button" value="15">15%</button>
+                    <button type="button" value="25">25%</button>
+                    <button type="button" value="50">50%</button>
+                    <button type="button" style="background: #f1f8fb; color: #617d7a;">Custom</button>
+                </div>
+            </div>
+            <div class="people">
+                <p id="numbers">Number Of people</p>
+                <i class="fas fa-user" style="padding: 10px;position: absolute; color: #c0d0d0;"></i>
+                <input type="text" placeholder="0" id="inp1" class="myinputf">
+            </div>
+        </div>
+    </div>
+        <div class="secondarycontainer">
+            <div class="maincontainer2">
+                <div class="tipscontainer">
+                    <div class="tipinput">
+                        <p id="tiping">Tip Amount<br><span> / Person</span></p>
+                        <p id="price">$ <span id="dollarspan">0.00</span></p>
+                    </div>
+                    <div class="tipinput">
+                        <p id="tiping">Total<br><span> / Person</span></p>
+                        <p id="price">$ <span id="total">0.00</span></p>
+                    </div>
+                    <div class="btncontainer">
+                        <button type="button" id="reseting">SUM</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <script>
+        $(document).ready(()=> {
+            $(".maincontainer").on("click","button",function() {
+                 
+                let billing = $(".mybill").val();
+                let x = $(this).attr("value")/100 * billing
+                console.log(x)
+                $("#dollarspan").text(x)
+                 
+                $("#reseting").click(()=> {
+                    let peoplenumber = $(".myinputf").val()
+                    $("#total").text(billing * peoplenumber)
+                })
+            })
+        })
+    </script>
+    
+</body>
+
+</html>

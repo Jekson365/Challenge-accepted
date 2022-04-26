@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Raleway:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Oswald:wght@700&family=Raleway:ital,wght@1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    position: relative;
+}
+
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon-stage{
+    color: rgb(255, 107, 53);
+    font-size: 30px;
+}
+.pre-order {
+
+    font-size: 13px;
+    border: 0;
+    outline: 0;
+    font-weight: bold;
+    color: rgb(3, 45, 3);
+    background-color: rgb(214, 236, 244);
+    border-radius: 5px;
+    padding: 7px 10px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.first-section {
+
+    margin: 50px auto;
+    max-width: 1000px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.section-image {
+    width:35%;
+    border-radius: 5px;
+    height: 300px;
+    overflow: hidden;
+}
+.org {
+    padding: 15px 15px;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    font-size: 11px;
+    color: white;
+    background-color: rgb(255, 107, 53);
+}
+.head-text {
+    font-family: 'Oswald', sans-serif;
+    line-height: 40px;
+    color: rgb(3, 3, 48);
+    font-size: 40px;
+}
+.section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:20px;
+}
+.section-image img {
+    object-position: left;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.buttons p {
+    font-family: 'Fira sans',sans-serif;
+}
+.content-text {
+    font-size: 13px;
+    font-family: sans-serif;
+    font-family: 'Oswald',sans-serif;
+    color: rgb(213, 213, 213);
+}
+.buttons p {
+    color: gray;
+    font-size: 14px;
+}
+.cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.second-section {
+    gap: 40px;
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.second-section-images {
+    display: flex;
+    width: 60%;
+}
+.sec-sec-img {
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px;
+    height: 400px;
+}
+.image_1 {
+    position: relative;
+    width: 30%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.image-content {
+    position: absolute;
+    transition: 0.3s;
+    white-space: nowrap;
+    bottom: 20px;
+    left: 30px;
+    opacity: 0;
+}
+.mg {
+    margin-bottom: 5px;
+    color: white;
+    background-color: rgb(255, 107, 53);
+}
+.image_1:hover {
+    width: 200%;
+}
+.image_1:hover .image-content {
+    opacity: 1;
+}
+.image_2 {
+    width: 70%;
+}
+.second-section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    text-align: left;
+    width: 25%;
+
+}
+.sa {
+    font-size: 25px;
+    line-height: 25px;
+}
+.low {
+   
+    font-size: 20px;
+    line-height: 25px;
+}
+.footer-container {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 25%;
+}
+.hig {
+    font-size: 40px;
+}
+.main-foot-container {
+    flex-wrap: wrap;
+    max-width: 870px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+@media screen and (max-width:800px) {
+    .first-section {
+        gap: 30px;
+        align-items: center;
+        flex-direction: column;
+    }
+    .section-image {
+        width: 65%;
+    }
+    .second-section {
+        max-width: 1200px;
+        flex-direction: column-reverse;
+    }
+    .second-section-content {
+        width: 50%;
+    }
+    .main-foot-container {
+        display: flex;
+        width: 300px;
+        flex-direction: column;
+        gap:20px;
+        align-items: center;
+    }
+    .footer-container {
+        display: flex;
+        align-items: center;
+        width: 60%;
+        text-align: center;
+    }
+    .hig {
+        font-size:70px;
+    }
+}
